@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-4 master" >
+                <h3 class="text">Calculadora</h3>
+                <p id="visor"></p>
+                <table class="calc">
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="clean()">C</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="backspace()">
+                                <strong><</strong>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('.')">.</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-warning btn-lg"  onclick="insert('/')">
+                                <i class="fa-solid fa-divide"></i>
+                            </button>
+                        </td>
+                   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('7')">7</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('8')">8</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('9')">9</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark btn-lg" onclick="insert('*')">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </td>
+                   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('4')">4</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('5')">5</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('6')">6</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-lg" onclick="insert('-')">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('1')">1</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('2')">2</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="insert('3')">3</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success btn-lg" onclick="insert('+')">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-lg" onclick="insert('0')">0</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-lg" onclick="insert(',')">,</button>
+                            </td>
+                            <td colspan="2">
+                                <button type="button" class="divider btn-info" onclick="insert('=')">
+                                    <i class="fas fa-equals"></i>
+                                </button>
+                            </td>
+                    </tr>
+                </table>
+                <di class="col-md-3"></di>  
+            </div>
+        </div>
+    </div>    
+</body>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+></script>
+<script src="functions/script.js"></script>
+</html>
